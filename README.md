@@ -75,13 +75,3 @@ The CA never leaves your machine.
 
 Azure Functions Consumption plan: 1M executions/month free (permanent). Typical
 engagement volume is effectively free; idle costs nothing.
-
-## OPSEC
-
-Resource names are randomized, App Insights is disabled, and the TLS fingerprint
-to targets is Azure's. Use a dedicated subscription and always `azprox nuke`
-afterward. See [docs/OPSEC.md](docs/OPSEC.md).
-
-## License
-
-GPL-3.0
