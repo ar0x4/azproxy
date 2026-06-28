@@ -1,0 +1,24 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": false
+      }
+    },
+    "logLevel": {
+      "default": "Warning",
+      "Host.Results": "Error",
+      "Function": "Warning",
+      "Host.Aggregator": "Error"
+    }
+  },
+  "extensions": {
+    "http": {
+      "routePrefix": "api",
+      "maxConcurrentRequests": 100,
+      "maxOutstandingRequests": 200
+    }
+  },
+  "functionTimeout": "00:00:30"
+}
